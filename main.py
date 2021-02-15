@@ -2,6 +2,8 @@
 import os
 import pymorphy2
 morph = pymorphy2.MorphAnalyzer()
+import requests
+from bs4 import BeautifulSoup
 
 # set max amount of files (compare with af)
 # -1 equal infinity
@@ -44,12 +46,43 @@ def print_item(item, start, end, text):
     out_file.write('\t\t<linktext>' + text.encode('utf-8') + '<linktext>\n')
     out_file.write('\t</item>\n')
 
+# Chech char after last '(' in string
+def x_pos(st):
+    c = st.count(')')
+    f = st.find('(')
+    while c > 1:
+        f = f + st[f + 1 :].find('(') + 1
+        c = c - 1
+    return f
+
+# add dublicate strings with offset
+def round_double(term, num, orig_term):
+    term = nitem = morph.parse(term)[0]
+    nitem = term.normal_form
+    c = nitem.count(" ")
+    if c == 0:
+        norm_library.append([nitem, num, orig_term])
+    else:
+        n_lst = nitem.split()
+        nitem = ""
+        for word in n_lst:
+            w = morph.parse(word)[0]
+            nitem = nitem + ' ' + w.normal_form
+        nitem = nitem[1:]
+        norm_library.append([nitem, num, orig_term])
+    while c > 0:
+        d = nitem.find(" ")
+        nitem = nitem[d+1:] + ' ' + nitem[:d]
+        norm_library.append([nitem, num, orig_term])
+        c = c - 1
+
 # MAIN
 
 # Open out_file
 out_file = open('out.txt', 'w')
 
 # Processing of dictionaries
+# libmeta.txt
 libmeta = []  # a list of string representing the libmeta.txt
 norm_library = [] # list of keywords in normal form
                   # with different word order for multi-word terms
@@ -84,6 +117,186 @@ with open('libmeta.txt', 'UTF-8') as libmeta:
             if len(keyword) > 0:
                 item = keyword.replace("_", " ").replace(" - ", "-").lower()
                 nitem = morph.parse(item)[0]
+
+# diffthes.txt
+library = [] # structure like in libmeta case, but codes instead of terms
+useless = 1
+with open('diffthes.txt', 'UTF-8') as libmeta:
+    line_type = 0
+    for line in libmeta:
+        if line.find('<lbm:ConceptGroup rdf:about="http://libmeta.ru/thesaurus/group/add"> </lbm:ConceptGroup>') > -1:
+            useless = 0
+        if line_type == 1: # this string contain link with 'show'
+            line_type = 0
+            link_num = line[41:-12]
+            library.append([item, link_num, item])
+        elif (line.find("<lbm:Concept rdf:about") == 0) and (line[-2] == '>') and (useless == 0):
+            line_type = 1 # this string contain term
+            term_code = line[60:-3]
+            item = unicode(line[60:-3], 'utf-8')
+# replace codes with terms
+for nitem in library:
+    url = 'http://libmeta.ru/concept/' + nitem[1]
+    web_page = requests.get(url)
+    ryy = web_page.text
+    ryy.replace('\n', ' ')
+    start_desc = ryy.find('<lbm:descriptor><') + 25
+    end_desc = ryy.find('></lbm:descriptor>') - 2
+    nitem[0] = ryy[start_desc : end_desc].replace("_", " ").replace(',', ' ').lower()
+    nitem[0] = nitem[0].replace('&laquo;', '«'.decode('utf-8')).replace('&raquo;', '»'.decode('utf-8'))
+    nitem[0] = nitem[0].replace('&quot;', '"').replace('&gt;', '>').replace('&lt;', '<').replace('&#39;', '\'')
+# Processing is specific for this thesaurus
+# Need checking for in case of addition new terms 
+dop_lib = []
+for item in library:
+    a1 = not (item[0].find('первого'.decode('utf-8')) == -1)
+    a2 = not (item[0].find('второго'.decode('utf-8')) == -1)
+    a3 = not (item[0].find('двух'.decode('utf-8')) == -1)
+    a4 = not (item[0].find('ОДУ'.decode('utf-8')) == -1)
+    a5 = not (item[0].find('.') == -1)
+    a6 = not (item[0].find('(') == -1)
+    a7 = not (item[0].find(' - ') == -1)
+    a8 = not (item[0].find('&') == -1)
+    a_neg = a5 or a6 or a7 or a8
+    a_pos = a1 or a2 or a3 or a4
+    if a_pos:
+        if a4:
+            if a1 and a2:
+                # without combination num and string value
+                dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')).replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+            elif a1:
+                dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')).replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')), item[1], item[2]])
+            elif a2:
+                dop_lib.append([item[0].replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+            elif a3:
+                dop_lib.append([item[0].replace('двух'.decode('utf-8'), '2-х'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')), item[1], item[2]])
+                dop_lib.append([item[0].replace('ОДУ'.decode('utf-8'), 'обыкновенное дифференциальное уравнение'.decode('utf-8')).replace('двух'.decode('utf-8'), '2-х'.decode('utf-8')), item[1], item[2]])
+        elif a3:
+            dop_lib.append([item[0].replace('двух'.decode('utf-8'), '2-х'.decode('utf-8')), item[1], item[2]])
+        elif a1 and a2:
+            # without combination num and string value
+            dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+        elif a1:
+            dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')), item[1], item[2]])
+        elif a2:
+            dop_lib.append([item[0].replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+library = library + dop_lib
+dop_lib = []
+for item in library:
+    a5 = not (item[0].find('.') == -1)
+    a6 = not (item[0].find('(') == -1)
+    a7 = not (item[0].find(' - ') == -1)
+    a8 = not (item[0].find('&') == -1)
+    a_neg = a5 or a6 or a7 or a8
+    if a_neg:
+        if item[0][-1] == ')':
+            item[0] = item[0][: item[0].find('(') - 1]
+        if (item[0].find(' - ') > -1):
+            item[0] = item[0][item[0].find(' - ') + 3 :]
+        if a5:
+            i = item[0].find('.')
+            j = item[0][i + 1 :].find('.') + i + 1
+            k = item[0][j + 2 :].find(' ') + j
+            if j - i == 3:
+                if i > 1:
+                    if k == -1:
+                        dop_lib.append([item[0][: i - 1] + item[0][j + 2 :] + item[0][i - 2 : j + 1], item[1], item[2]])
+                    else:
+                        dop_lib.append([item[0][: i - 1] + item[0][j + 2 : k + 2] + item[0][i - 2 : j + 1] + item[0][k + 2 :], item[1], item[2]])
+                else:
+                    dop_lib.append([item[0][6 : k + 3] + item[0][: 5] + item[0][k + 2 :], item[1], item[2]])
+            else:
+                i = item[0].find('ф. хартмана'.decode('utf-8'))
+                if (i > -1):
+                    if i > 0:
+                        dop_lib.append([item[0][: i] + 'хартмана ф.'.decode('utf-8') + item[0][i + 11 :], item[1], item[2]])
+                    else:
+                        dop_lib.append(['хартмана ф.'.decode('utf-8') + item[0][11:], item[1], item[2]])
+                else:
+                    dop_lib.append([item[0][i + 2:], item[1], item[2]])
+                    item[0] = item[0][: i]
+        i = item[0].find(')')
+        if (i > -1) and (len(item[0]) - i > 3):
+            f = x_pos(item[0])
+            if item[0][f + 1] != 'x':
+                dop_lib.append([item[0][: f - 1] + item[0][i + 1 :], item[1], item[2]])
+                dop_lib.append([item[0][f + 1 :].replace(')', ''), item[1], item[2]])
+library = library + dop_lib
+# create normal forms and add to norm_library
+for item in library:
+    round_double(item[0], item[1], item[2])
+
+# specfunc.txt
+library = [] 
+useless = 1
+with open('specfunc.txt', 'UTF-8') as libmeta:
+    line_type = 0
+    for line in libmeta:
+        if line.find('<lbm:ConceptGroup rdf:about="http://libmeta.ru/thesaurus/group/specmain"> </lbm:ConceptGroup>') > -1:
+            useless = 0
+        if line_type == 1: # this string contain link with 'show'
+            line_type = 0
+            link_num = line[41:-12]
+            library.append([item, link_num, item])
+        elif (line.find("<lbm:Concept rdf:about") == 0) and (line[-2] == '>') and (useless == 0):
+            line_type = 1 # this string contain term
+            term_code = line[60:-3]
+            item = unicode(line[60:-3], 'utf-8')
+# get terms instead of codes by url
+for nitem in library:
+    url = 'http://libmeta.ru/concept/' + nitem[1]
+    web_page = requests.get(url)
+    ryy = web_page.text
+    ryy.replace('\n', ' ')
+    start_desc = ryy.find('<lbm:descriptor><') + 25
+    end_desc = ryy.find('></lbm:descriptor>') - 2
+    #print type(end_desc)
+    #print ryy[start_desc, end_desc]
+    nitem[0] = ryy[start_desc : end_desc].replace("_", " ").replace(',', ' ').lower()
+    nitem[0] = nitem[0].replace('&laquo;', '«'.decode('utf-8')).replace('&raquo;', '»'.decode('utf-8'))
+    nitem[0] = nitem[0].replace('&quot;', '"').replace('&gt;', '>').replace('&lt;', '<').replace('&#39;', '\'')
+# Process thesaurus
+dop_lib = []
+for item in library:
+    a1 = not (item[0].find('первого'.decode('utf-8')) == -1)
+    a2 = not (item[0].find('второго'.decode('utf-8')) == -1)
+    a3 = not (item[0].find('двух'.decode('utf-8')) == -1)
+    a4 = not (item[0].find('третьего'.decode('utf-8')) == -1)
+    a_pos = a1 or a2 or a3 or a4
+    if a_pos:
+        if a3:
+            dop_lib.append([item[0].replace('двух'.decode('utf-8'), '2-х'.decode('utf-8')), item[1], item[2]])
+        elif a1 and a2 and a4:
+            # without combination num and string value
+            st = item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8'))
+            dop_lib.append([st.replace('третьего'.decode('utf-8'), '3-го'.decode('utf-8')), item[1], item[2]])
+        elif a1 and a2:
+            # without combination num and string value
+            dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')).replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+        elif a1:
+            dop_lib.append([item[0].replace('первого'.decode('utf-8'), '1-го'.decode('utf-8')), item[1], item[2]])
+        elif a2:
+            dop_lib.append([item[0].replace('второго'.decode('utf-8'), '2-го'.decode('utf-8')), item[1], item[2]])
+        elif a4:
+            dop_lib.append([item[0].replace('третьего'.decode('utf-8'), '3-го'.decode('utf-8')), item[1], item[2]])
+library = library + dop_lib
+for item in library:
+    a5 = item[0].find(')'.decode('utf-8'))
+    if (a5 > -1) and (len(item[0]) - a5 > 5):
+        #print item[0][a5 - 3 : a5 + 3]
+        if (item[0][a5 - 1] != 'z'):
+            a6 = item[0].find('('.decode('utf-8'))
+            dop_lib.append([item[0][: a6] + item[0][a5 + 2 :], item[1], item[2]])
+            dop_lib.append([item[0][a6 + 1 : a5] + item[0][a5 + 1 :], item[1], item[2]])
+library = library + dop_lib
+
 norm_library.sort(key=lambda x: 0 - x[0].count(" "))
 
 # Open files by rotation

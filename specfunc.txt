@@ -1,0 +1,609 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:lbm="http://libmeta.ru/" xmlns:core="http://libmeta.ru/core">
+<lbm:Thesaurus rdf:about="http://libmeta.ru/thesaurus/SpecFunctions">
+<lbm:ConceptGroup rdf:about="http://libmeta.ru/thesaurus/group/specmain"> </lbm:ConceptGroup>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_27">
+<core:url>http://libmeta.ru/concept/show/6744</core:url>
+<core:url>http://libmeta.ru/concept/6744</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_68">
+<core:url>http://libmeta.ru/concept/show/6785</core:url>
+<core:url>http://libmeta.ru/concept/6785</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_58">
+<core:url>http://libmeta.ru/concept/show/6775</core:url>
+<core:url>http://libmeta.ru/concept/6775</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_28">
+<core:url>http://libmeta.ru/concept/show/6745</core:url>
+<core:url>http://libmeta.ru/concept/6745</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_29">
+<core:url>http://libmeta.ru/concept/show/6746</core:url>
+<core:url>http://libmeta.ru/concept/6746</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_36">
+<core:url>http://libmeta.ru/concept/show/6753</core:url>
+<core:url>http://libmeta.ru/concept/6753</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_47">
+<core:url>http://libmeta.ru/concept/show/6764</core:url>
+<core:url>http://libmeta.ru/concept/6764</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_59">
+<core:url>http://libmeta.ru/concept/show/6776</core:url>
+<core:url>http://libmeta.ru/concept/6776</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_37">
+<core:url>http://libmeta.ru/concept/show/6754</core:url>
+<core:url>http://libmeta.ru/concept/6754</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_48">
+<core:url>http://libmeta.ru/concept/show/6765</core:url>
+<core:url>http://libmeta.ru/concept/6765</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_30">
+<core:url>http://libmeta.ru/concept/show/6747</core:url>
+<core:url>http://libmeta.ru/concept/6747</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_84">
+<core:url>http://libmeta.ru/concept/show/6801</core:url>
+<core:url>http://libmeta.ru/concept/6801</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_31">
+<core:url>http://libmeta.ru/concept/show/6748</core:url>
+<core:url>http://libmeta.ru/concept/6748</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_32">
+<core:url>http://libmeta.ru/concept/show/6749</core:url>
+<core:url>http://libmeta.ru/concept/6749</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_33">
+<core:url>http://libmeta.ru/concept/show/6750</core:url>
+<core:url>http://libmeta.ru/concept/6750</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_34">
+<core:url>http://libmeta.ru/concept/show/6751</core:url>
+<core:url>http://libmeta.ru/concept/6751</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_69">
+<core:url>http://libmeta.ru/concept/show/6786</core:url>
+<core:url>http://libmeta.ru/concept/6786</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_38">
+<core:url>http://libmeta.ru/concept/show/6755</core:url>
+<core:url>http://libmeta.ru/concept/6755</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_49">
+<core:url>http://libmeta.ru/concept/show/6766</core:url>
+<core:url>http://libmeta.ru/concept/6766</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_60">
+<core:url>http://libmeta.ru/concept/show/6777</core:url>
+<core:url>http://libmeta.ru/concept/6777</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_17">
+<core:url>http://libmeta.ru/concept/show/6734</core:url>
+<core:url>http://libmeta.ru/concept/6734</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_39">
+<core:url>http://libmeta.ru/concept/show/6756</core:url>
+<core:url>http://libmeta.ru/concept/6756</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_18">
+<core:url>http://libmeta.ru/concept/show/6735</core:url>
+<core:url>http://libmeta.ru/concept/6735</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_19">
+<core:url>http://libmeta.ru/concept/show/6736</core:url>
+<core:url>http://libmeta.ru/concept/6736</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_50">
+<core:url>http://libmeta.ru/concept/show/6767</core:url>
+<core:url>http://libmeta.ru/concept/6767</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_79">
+<core:url>http://libmeta.ru/concept/show/6796</core:url>
+<core:url>http://libmeta.ru/concept/6796</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_20">
+<core:url>http://libmeta.ru/concept/show/6737</core:url>
+<core:url>http://libmeta.ru/concept/6737</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_21">
+<core:url>http://libmeta.ru/concept/show/6738</core:url>
+<core:url>http://libmeta.ru/concept/6738</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_40">
+<core:url>http://libmeta.ru/concept/show/6757</core:url>
+<core:url>http://libmeta.ru/concept/6757</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_70">
+<core:url>http://libmeta.ru/concept/show/6787</core:url>
+<core:url>http://libmeta.ru/concept/6787</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_22">
+<core:url>http://libmeta.ru/concept/show/6739</core:url>
+<core:url>http://libmeta.ru/concept/6739</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_23">
+<core:url>http://libmeta.ru/concept/show/6740</core:url>
+<core:url>http://libmeta.ru/concept/6740</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_51">
+<core:url>http://libmeta.ru/concept/show/6768</core:url>
+<core:url>http://libmeta.ru/concept/6768</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_41">
+<core:url>http://libmeta.ru/concept/show/6758</core:url>
+<core:url>http://libmeta.ru/concept/6758</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_61">
+<core:url>http://libmeta.ru/concept/show/6778</core:url>
+<core:url>http://libmeta.ru/concept/6778</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_24">
+<core:url>http://libmeta.ru/concept/show/6741</core:url>
+<core:url>http://libmeta.ru/concept/6741</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_25">
+<core:url>http://libmeta.ru/concept/show/6742</core:url>
+<core:url>http://libmeta.ru/concept/6742</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_26">
+<core:url>http://libmeta.ru/concept/show/6743</core:url>
+<core:url>http://libmeta.ru/concept/6743</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_8">
+<core:url>http://libmeta.ru/concept/show/6725</core:url>
+<core:url>http://libmeta.ru/concept/6725</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_4">
+<core:url>http://libmeta.ru/concept/show/6721</core:url>
+<core:url>http://libmeta.ru/concept/6721</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_3">
+<core:url>http://libmeta.ru/concept/show/6720</core:url>
+<core:url>http://libmeta.ru/concept/6720</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_2">
+<core:url>http://libmeta.ru/concept/show/6719</core:url>
+<core:url>http://libmeta.ru/concept/6719</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_1">
+<core:url>http://libmeta.ru/concept/show/6718</core:url>
+<core:url>http://libmeta.ru/concept/6718</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_5">
+<core:url>http://libmeta.ru/concept/show/6722</core:url>
+<core:url>http://libmeta.ru/concept/6722</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_6">
+<core:url>http://libmeta.ru/concept/show/6723</core:url>
+<core:url>http://libmeta.ru/concept/6723</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_7">
+<core:url>http://libmeta.ru/concept/show/6724</core:url>
+<core:url>http://libmeta.ru/concept/6724</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_9">
+<core:url>http://libmeta.ru/concept/show/6726</core:url>
+<core:url>http://libmeta.ru/concept/6726</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_10">
+<core:url>http://libmeta.ru/concept/show/6727</core:url>
+<core:url>http://libmeta.ru/concept/6727</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_11">
+<core:url>http://libmeta.ru/concept/show/6728</core:url>
+<core:url>http://libmeta.ru/concept/6728</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_12">
+<core:url>http://libmeta.ru/concept/show/6729</core:url>
+<core:url>http://libmeta.ru/concept/6729</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_13">
+<core:url>http://libmeta.ru/concept/show/6730</core:url>
+<core:url>http://libmeta.ru/concept/6730</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_14">
+<core:url>http://libmeta.ru/concept/show/6731</core:url>
+<core:url>http://libmeta.ru/concept/6731</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_15">
+<core:url>http://libmeta.ru/concept/show/6732</core:url>
+<core:url>http://libmeta.ru/concept/6732</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_16">
+<core:url>http://libmeta.ru/concept/show/6733</core:url>
+<core:url>http://libmeta.ru/concept/6733</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_46">
+<core:url>http://libmeta.ru/concept/show/6763</core:url>
+<core:url>http://libmeta.ru/concept/6763</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_35">
+<core:url>http://libmeta.ru/concept/show/6752</core:url>
+<core:url>http://libmeta.ru/concept/6752</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_57">
+<core:url>http://libmeta.ru/concept/show/6774</core:url>
+<core:url>http://libmeta.ru/concept/6774</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_42">
+<core:url>http://libmeta.ru/concept/show/6759</core:url>
+<core:url>http://libmeta.ru/concept/6759</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_52">
+<core:url>http://libmeta.ru/concept/show/6769</core:url>
+<core:url>http://libmeta.ru/concept/6769</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_71">
+<core:url>http://libmeta.ru/concept/show/6788</core:url>
+<core:url>http://libmeta.ru/concept/6788</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_53">
+<core:url>http://libmeta.ru/concept/show/6770</core:url>
+<core:url>http://libmeta.ru/concept/6770</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_43">
+<core:url>http://libmeta.ru/concept/show/6760</core:url>
+<core:url>http://libmeta.ru/concept/6760</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_62">
+<core:url>http://libmeta.ru/concept/show/6779</core:url>
+<core:url>http://libmeta.ru/concept/6779</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_44">
+<core:url>http://libmeta.ru/concept/show/6761</core:url>
+<core:url>http://libmeta.ru/concept/6761</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_54">
+<core:url>http://libmeta.ru/concept/show/6771</core:url>
+<core:url>http://libmeta.ru/concept/6771</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_45">
+<core:url>http://libmeta.ru/concept/show/6762</core:url>
+<core:url>http://libmeta.ru/concept/6762</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_72">
+<core:url>http://libmeta.ru/concept/show/6789</core:url>
+<core:url>http://libmeta.ru/concept/6789</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_63">
+<core:url>http://libmeta.ru/concept/show/6780</core:url>
+<core:url>http://libmeta.ru/concept/6780</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_101">
+<core:url>http://libmeta.ru/concept/show/6818</core:url>
+<core:url>http://libmeta.ru/concept/6818</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_81">
+<core:url>http://libmeta.ru/concept/show/6798</core:url>
+<core:url>http://libmeta.ru/concept/6798</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_55">
+<core:url>http://libmeta.ru/concept/show/6772</core:url>
+<core:url>http://libmeta.ru/concept/6772</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_73">
+<core:url>http://libmeta.ru/concept/show/6790</core:url>
+<core:url>http://libmeta.ru/concept/6790</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_64">
+<core:url>http://libmeta.ru/concept/show/6781</core:url>
+<core:url>http://libmeta.ru/concept/6781</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_56">
+<core:url>http://libmeta.ru/concept/show/6773</core:url>
+<core:url>http://libmeta.ru/concept/6773</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_88">
+<core:url>http://libmeta.ru/concept/show/6805</core:url>
+<core:url>http://libmeta.ru/concept/6805</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_65">
+<core:url>http://libmeta.ru/concept/show/6782</core:url>
+<core:url>http://libmeta.ru/concept/6782</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_74">
+<core:url>http://libmeta.ru/concept/show/6791</core:url>
+<core:url>http://libmeta.ru/concept/6791</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_66">
+<core:url>http://libmeta.ru/concept/show/6783</core:url>
+<core:url>http://libmeta.ru/concept/6783</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_67">
+<core:url>http://libmeta.ru/concept/show/6784</core:url>
+<core:url>http://libmeta.ru/concept/6784</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_96">
+<core:url>http://libmeta.ru/concept/show/6813</core:url>
+<core:url>http://libmeta.ru/concept/6813</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_75">
+<core:url>http://libmeta.ru/concept/show/6792</core:url>
+<core:url>http://libmeta.ru/concept/6792</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_85">
+<core:url>http://libmeta.ru/concept/show/6802</core:url>
+<core:url>http://libmeta.ru/concept/6802</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_77">
+<core:url>http://libmeta.ru/concept/show/6794</core:url>
+<core:url>http://libmeta.ru/concept/6794</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_82">
+<core:url>http://libmeta.ru/concept/show/6799</core:url>
+<core:url>http://libmeta.ru/concept/6799</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_94">
+<core:url>http://libmeta.ru/concept/show/6811</core:url>
+<core:url>http://libmeta.ru/concept/6811</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_78">
+<core:url>http://libmeta.ru/concept/show/6795</core:url>
+<core:url>http://libmeta.ru/concept/6795</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_89">
+<core:url>http://libmeta.ru/concept/show/6806</core:url>
+<core:url>http://libmeta.ru/concept/6806</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_92">
+<core:url>http://libmeta.ru/concept/show/6809</core:url>
+<core:url>http://libmeta.ru/concept/6809</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_86">
+<core:url>http://libmeta.ru/concept/show/6803</core:url>
+<core:url>http://libmeta.ru/concept/6803</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_83">
+<core:url>http://libmeta.ru/concept/show/6800</core:url>
+<core:url>http://libmeta.ru/concept/6800</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_87">
+<core:url>http://libmeta.ru/concept/show/6804</core:url>
+<core:url>http://libmeta.ru/concept/6804</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_90">
+<core:url>http://libmeta.ru/concept/show/6807</core:url>
+<core:url>http://libmeta.ru/concept/6807</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_98">
+<core:url>http://libmeta.ru/concept/show/6815</core:url>
+<core:url>http://libmeta.ru/concept/6815</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_93">
+<core:url>http://libmeta.ru/concept/show/6810</core:url>
+<core:url>http://libmeta.ru/concept/6810</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_91">
+<core:url>http://libmeta.ru/concept/show/6808</core:url>
+<core:url>http://libmeta.ru/concept/6808</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_95">
+<core:url>http://libmeta.ru/concept/show/6812</core:url>
+<core:url>http://libmeta.ru/concept/6812</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_100">
+<core:url>http://libmeta.ru/concept/show/6817</core:url>
+<core:url>http://libmeta.ru/concept/6817</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_97">
+<core:url>http://libmeta.ru/concept/show/6814</core:url>
+<core:url>http://libmeta.ru/concept/6814</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_99">
+<core:url>http://libmeta.ru/concept/show/6816</core:url>
+<core:url>http://libmeta.ru/concept/6816</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_103">
+<core:url>http://libmeta.ru/concept/show/6820</core:url>
+<core:url>http://libmeta.ru/concept/6820</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_102">
+<core:url>http://libmeta.ru/concept/show/6819</core:url>
+<core:url>http://libmeta.ru/concept/6819</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_104">
+<core:url>http://libmeta.ru/concept/show/6821</core:url>
+<core:url>http://libmeta.ru/concept/6821</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_105">
+<core:url>http://libmeta.ru/concept/show/6822</core:url>
+<core:url>http://libmeta.ru/concept/6822</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_106">
+<core:url>http://libmeta.ru/concept/show/6823</core:url>
+<core:url>http://libmeta.ru/concept/6823</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_107">
+<core:url>http://libmeta.ru/concept/show/6824</core:url>
+<core:url>http://libmeta.ru/concept/6824</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_108">
+<core:url>http://libmeta.ru/concept/show/6825</core:url>
+<core:url>http://libmeta.ru/concept/6825</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_109">
+<core:url>http://libmeta.ru/concept/show/6826</core:url>
+<core:url>http://libmeta.ru/concept/6826</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_110">
+<core:url>http://libmeta.ru/concept/show/6827</core:url>
+<core:url>http://libmeta.ru/concept/6827</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_76">
+<core:url>http://libmeta.ru/concept/show/6793</core:url>
+<core:url>http://libmeta.ru/concept/6793</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_80">
+<core:url>http://libmeta.ru/concept/show/6797</core:url>
+<core:url>http://libmeta.ru/concept/6797</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_124">
+<core:url>http://libmeta.ru/concept/show/6841</core:url>
+<core:url>http://libmeta.ru/concept/6841</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_134">
+<core:url>http://libmeta.ru/concept/show/6851</core:url>
+<core:url>http://libmeta.ru/concept/6851</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_111">
+<core:url>http://libmeta.ru/concept/show/6828</core:url>
+<core:url>http://libmeta.ru/concept/6828</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_142">
+<core:url>http://libmeta.ru/concept/show/6859</core:url>
+<core:url>http://libmeta.ru/concept/6859</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_125">
+<core:url>http://libmeta.ru/concept/show/6842</core:url>
+<core:url>http://libmeta.ru/concept/6842</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_112">
+<core:url>http://libmeta.ru/concept/show/6829</core:url>
+<core:url>http://libmeta.ru/concept/6829</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_150">
+<core:url>http://libmeta.ru/concept/show/6867</core:url>
+<core:url>http://libmeta.ru/concept/6867</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_135">
+<core:url>http://libmeta.ru/concept/show/6852</core:url>
+<core:url>http://libmeta.ru/concept/6852</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_113">
+<core:url>http://libmeta.ru/concept/show/6830</core:url>
+<core:url>http://libmeta.ru/concept/6830</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_126">
+<core:url>http://libmeta.ru/concept/show/6843</core:url>
+<core:url>http://libmeta.ru/concept/6843</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_114">
+<core:url>http://libmeta.ru/concept/show/6831</core:url>
+<core:url>http://libmeta.ru/concept/6831</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_136">
+<core:url>http://libmeta.ru/concept/show/6853</core:url>
+<core:url>http://libmeta.ru/concept/6853</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_115">
+<core:url>http://libmeta.ru/concept/show/6832</core:url>
+<core:url>http://libmeta.ru/concept/6832</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_127">
+<core:url>http://libmeta.ru/concept/show/6844</core:url>
+<core:url>http://libmeta.ru/concept/6844</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_151">
+<core:url>http://libmeta.ru/concept/show/6868</core:url>
+<core:url>http://libmeta.ru/concept/6868</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_116">
+<core:url>http://libmeta.ru/concept/show/6833</core:url>
+<core:url>http://libmeta.ru/concept/6833</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_128">
+<core:url>http://libmeta.ru/concept/show/6845</core:url>
+<core:url>http://libmeta.ru/concept/6845</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_143">
+<core:url>http://libmeta.ru/concept/show/6860</core:url>
+<core:url>http://libmeta.ru/concept/6860</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_117">
+<core:url>http://libmeta.ru/concept/show/6834</core:url>
+<core:url>http://libmeta.ru/concept/6834</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_137">
+<core:url>http://libmeta.ru/concept/show/6854</core:url>
+<core:url>http://libmeta.ru/concept/6854</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_129">
+<core:url>http://libmeta.ru/concept/show/6846</core:url>
+<core:url>http://libmeta.ru/concept/6846</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_118">
+<core:url>http://libmeta.ru/concept/show/6835</core:url>
+<core:url>http://libmeta.ru/concept/6835</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_119">
+<core:url>http://libmeta.ru/concept/show/6836</core:url>
+<core:url>http://libmeta.ru/concept/6836</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_130">
+<core:url>http://libmeta.ru/concept/show/6847</core:url>
+<core:url>http://libmeta.ru/concept/6847</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_120">
+<core:url>http://libmeta.ru/concept/show/6837</core:url>
+<core:url>http://libmeta.ru/concept/6837</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_121">
+<core:url>http://libmeta.ru/concept/show/6838</core:url>
+<core:url>http://libmeta.ru/concept/6838</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_138">
+<core:url>http://libmeta.ru/concept/show/6855</core:url>
+<core:url>http://libmeta.ru/concept/6855</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_122">
+<core:url>http://libmeta.ru/concept/show/6839</core:url>
+<core:url>http://libmeta.ru/concept/6839</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_144">
+<core:url>http://libmeta.ru/concept/show/6861</core:url>
+<core:url>http://libmeta.ru/concept/6861</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_131">
+<core:url>http://libmeta.ru/concept/show/6848</core:url>
+<core:url>http://libmeta.ru/concept/6848</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_123">
+<core:url>http://libmeta.ru/concept/show/6840</core:url>
+<core:url>http://libmeta.ru/concept/6840</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_145">
+<core:url>http://libmeta.ru/concept/show/6862</core:url>
+<core:url>http://libmeta.ru/concept/6862</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_139">
+<core:url>http://libmeta.ru/concept/show/6856</core:url>
+<core:url>http://libmeta.ru/concept/6856</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_132">
+<core:url>http://libmeta.ru/concept/show/6849</core:url>
+<core:url>http://libmeta.ru/concept/6849</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_146">
+<core:url>http://libmeta.ru/concept/show/6863</core:url>
+<core:url>http://libmeta.ru/concept/6863</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_133">
+<core:url>http://libmeta.ru/concept/show/6850</core:url>
+<core:url>http://libmeta.ru/concept/6850</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_140">
+<core:url>http://libmeta.ru/concept/show/6857</core:url>
+<core:url>http://libmeta.ru/concept/6857</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_147">
+<core:url>http://libmeta.ru/concept/show/6864</core:url>
+<core:url>http://libmeta.ru/concept/6864</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_141">
+<core:url>http://libmeta.ru/concept/show/6858</core:url>
+<core:url>http://libmeta.ru/concept/6858</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_148">
+<core:url>http://libmeta.ru/concept/show/6865</core:url>
+<core:url>http://libmeta.ru/concept/6865</core:url>
+</lbm:Concept>
+<lbm:Concept rdf:about="http://libmeta.ru/thesaurus/concept/specfunc_149">
+<core:url>http://libmeta.ru/concept/show/6866</core:url>
+<core:url>http://libmeta.ru/concept/6866</core:url>
+</lbm:Concept>
+</lbm:Thesaurus>
+</rdf:RDF>
